@@ -101,47 +101,50 @@ para('(3) She（ am ・ are ・ is ）　　(4) They（ am ・ are ・ is ）')
 
 # ============ 大問2 ============
 daimon(2, 'be動詞の疑問文（ぎもんぶん）・否定文（ひていぶん）', '8点')
-para('それぞれ正しい文をア～ウから選び、（　）に記号を書きましょう。', space_after=4)
+para('それぞれ正しい文をア～エから選び、（　）に記号を書きましょう。', space_after=4)
 be_items = [
     ('You are tall.', 'あなたは背が高いです',
-     ['Are you tall?', 'You are tall?', 'Do you tall?'],
-     ['You not are tall.', 'You are not tall.', "You don't tall."]),
+     ['Are you tall?', 'You are tall?', 'Do you tall?', 'Is you tall?'],
+     ['You not are tall.', 'You are not tall.', "You don't tall.", 'You is not tall.']),
     ('It is small.', 'それは小さいです',
-     ['It is small?', 'Is it small?', 'Does it small?'],
-     ['It is not small.', 'It not is small.', "It don't small."]),
+     ['It is small?', 'Is it small?', 'Does it small?', 'Are it small?'],
+     ['It is not small.', 'It not is small.', "It don't small.", 'It are not small.']),
     ('She is kind.', '彼女は親切です',
-     ['Are she kind?', 'Is she kind?', 'She is kind?'],
-     ['She is not kind.', 'She not kind.', "She doesn't kind."]),
+     ['Are she kind?', 'Is she kind?', 'She is kind?', 'Does she kind?'],
+     ['She is not kind.', 'She not kind.', "She doesn't kind.", 'She are not kind.']),
     ('They are happy.', '彼らは幸せです',
-     ['Is they happy?', 'Are they happy?', 'They are happy?'],
-     ['They are not happy.', 'They not happy.', "They don't happy."]),
+     ['Is they happy?', 'Are they happy?', 'They are happy?', 'Do they happy?'],
+     ['They are not happy.', 'They not happy.', "They don't happy.", 'They is not happy.']),
 ]
 for i, (en, ja, q, n) in enumerate(be_items, 1):
     para(f'({i}) {en}（{ja}）', bold=True, space_before=4, space_after=2)
-    para(f'　疑問文（　　）　ア {q[0]}　　イ {q[1]}　　ウ {q[2]}', space_after=1)
-    para(f'　否定文（　　）　ア {n[0]}　　イ {n[1]}　　ウ {n[2]}', space_after=3)
+    para(f'　疑問文（　　）　ア {q[0]}　　イ {q[1]}　　ウ {q[2]}　　エ {q[3]}', space_after=1)
+    para(f'　否定文（　　）　ア {n[0]}　　イ {n[1]}　　ウ {n[2]}　　エ {n[3]}', space_after=3)
 
 # ============ 大問3 ============
 daimon(3, 'can（～できる）', '6点')
-para('A）それぞれ正しい文をア～ウから選び、（　）に記号を書きましょう。', space_after=4)
+para('A）それぞれ正しい文をア～エから選び、（　）に記号を書きましょう。', space_after=4)
 can_items = [
     ('You can swim.', 'あなたは泳げます',
-     ['You can swim?', 'Can you swim?', 'Do you can swim?'],
-     ['You cannot swim.', 'You can not swimming.', "You don't can swim."]),
+     ['You can swim?', 'Can you swim?', 'Do you can swim?', 'Can swim you?'],
+     ['You cannot swim.', 'You can not swimming.', "You don't can swim.", 'You swim cannot.']),
     ('He can run fast.', '彼は速く走れます',
-     ['Can he run fast?', 'Can he runs fast?', 'Does he can run fast?'],
-     ['He cannot run fast.', "He can't runs fast.", "He doesn't can run fast."]),
+     ['Can he run fast?', 'Can he runs fast?', 'Does he can run fast?', 'He can run fast?'],
+     ['He cannot run fast.', "He can't runs fast.", "He doesn't can run fast.",
+      'He not can run fast.']),
 ]
 for i, (en, ja, q, n) in enumerate(can_items, 1):
     para(f'({i}) {en}（{ja}）', bold=True, space_before=4, space_after=2)
-    para(f'　疑問文（　　）　ア {q[0]}　　イ {q[1]}　　ウ {q[2]}', space_after=1)
-    para(f'　否定文（　　）　ア {n[0]}　　イ {n[1]}　　ウ {n[2]}', space_after=3)
-para('B）正しい語順（ごじゅん）の文をア～ウから選び、（　）に記号を書きましょう。',
+    para(f'　疑問文（　　）　ア {q[0]}　　イ {q[1]}　　ウ {q[2]}　　エ {q[3]}', space_after=1)
+    para(f'　否定文（　　）　ア {n[0]}　　イ {n[1]}　　ウ {n[2]}　　エ {n[3]}', space_after=3)
+para('B）正しい語順（ごじゅん）の文をア～エから選び、（　）に記号を書きましょう。',
      space_before=4, space_after=2)
 para('（　　）(1) 私は上手に歌えます。')
-para('　ア I can sing well.　　イ I sing can well.　　ウ I well can sing.', space_after=4)
+para('　ア I can sing well.　　イ I sing can well.　　ウ I well can sing.　　エ I can well sing.',
+     space_after=4)
 para('（　　）(2) あなたはピアノをひけますか。')
-para('　ア You can play the piano?　　イ Can you play the piano?　　ウ Can you the piano play?')
+para('　ア You can play the piano?　　イ Can you play the piano?')
+para('　ウ Can you the piano play?　　エ Do you can play the piano?')
 
 # ============ 大問4 ============
 daimon(4, '疑問詞（ぎもんし）（5W1H）', '10点')
@@ -149,44 +152,46 @@ para('A）次の英語の意味をア～カから選び、（　）に記号を�
 goku_box('ア いつ　　イ なぜ　　ウ 何　　エ どのように　　オ どこ　　カ だれ')
 para('(1) what（　　）　(2) when（　　）　(3) where（　　）')
 para('(4) who（　　）　(5) why（　　）　(6) how（　　）', space_after=6)
-para('B）（　）に合う疑問詞をア～ウから選び、記号を書きましょう。（be動詞の文です）', space_after=4)
+para('B）（　）に合う疑問詞をア～エから選び、記号を書きましょう。（be動詞の文です）', space_after=4)
 q4 = [
-    ('これは何ですか。', '(　　) is this?', 'What', 'Who', 'Where'),
-    ('あなたのぼうしはどこですか。', '(　　) is your cap?', 'How', 'What', 'Where'),
-    ('なぜあなたはつかれているのですか。', '(　　) are you tired?', 'Why', 'Who', 'When'),
-    ('あなたの学校はどうですか。', '(　　) is your school?', 'When', 'How', 'Where'),
+    ('これは何ですか。', '(　　) is this?', 'What', 'Who', 'Where', 'When'),
+    ('あなたのぼうしはどこですか。', '(　　) is your cap?', 'How', 'What', 'Where', 'Why'),
+    ('なぜあなたはつかれているのですか。', '(　　) are you tired?', 'Why', 'Who', 'When', 'What'),
+    ('あなたの学校はどうですか。', '(　　) is your school?', 'When', 'How', 'Where', 'Who'),
 ]
-for i, (ja, en, a, b, c) in enumerate(q4, 1):
+for i, (ja, en, a, b, c, d) in enumerate(q4, 1):
     para(f'（　　）({i}) {ja}　{en}')
-    para(f'　ア {a}　　イ {b}　　ウ {c}', space_after=4)
+    para(f'　ア {a}　　イ {b}　　ウ {c}　　エ {d}', space_after=4)
 
 # ============ 大問5 ============
 daimon(5, '時（とき）を表す語', '4点')
 para('A）次の英語の意味をア～キから選び、（　）に記号を書きましょう。', space_after=2)
 goku_box('ア 今日　　イ 夜　　ウ 朝　　エ 明日　　オ 午後　　カ 昨日　　キ 夕方')
 para('(1) morning（　　）　(2) yesterday（　　）　(3) tomorrow（　　）', space_after=6)
-para('B）正しい語順の文をア～ウから選び、（　）に記号を書きましょう。', space_after=2)
+para('B）正しい語順の文をア～エから選び、（　）に記号を書きましょう。', space_after=2)
 para('（　　）(1) 私は夜に散歩をします。')
-para('　ア I take a walk at night.　　イ I at night take a walk.　　ウ At night a walk I take.')
+para('　ア I take a walk at night.　　イ I at night take a walk.')
+para('　ウ At night a walk I take.　　エ I take at night a walk.')
 
 # ============ 大問6 ============
 daimon(6, '副詞（ふくし）', '4点')
 para('A）次の英語の意味をア～カから選び、（　）に記号を書きましょう。', space_after=2)
 goku_box('ア 遅く　　イ 上手に　　ウ ゆっくり　　エ 早く　　オ 一生けんめいに　　カ 注意深く')
 para('(1) slowly（　　）　(2) hard（　　）　(3) well（　　）', space_after=6)
-para('B）正しい語順の文をア～ウから選び、（　）に記号を書きましょう。', space_after=2)
+para('B）正しい語順の文をア～エから選び、（　）に記号を書きましょう。', space_after=2)
 para('（　　）(1) 私は学校に遅れて来ます。')
-para('　ア I come to school late.　　イ I to school late come.　　ウ Late come I to school.')
+para('　ア I come to school late.　　イ I to school late come.')
+para('　ウ Late come I to school.　　エ I late come to school.')
 
 # ============ 大問7 ============
 daimon(7, '前置詞（ぜんちし）', '4点')
 para('A）次の英語の意味をア～カから選び、（　）に記号を書きましょう。', space_after=2)
 goku_box('ア ～まで　　イ ～について　　ウ ～と一緒に　　エ ～から　　オ ～へ　　カ ～のために')
 para('(1) with（　　）　(2) until（　　）　(3) about（　　）', space_after=6)
-para('B）正しい文をア～ウから選び、（　）に記号を書きましょう。', space_after=2)
+para('B）正しい文をア～エから選び、（　）に記号を書きましょう。', space_after=2)
 para('（　　）(1) 私は朝から晩まで歌います。')
-para('　ア I sing from morning until night.　　イ I sing until morning from night.　　'
-     'ウ I from morning sing until night.')
+para('　ア I sing from morning until night.　　イ I sing until morning from night.')
+para('　ウ I from morning sing until night.　　エ I sing from night until morning.')
 
 # ============ 大問8 ============
 daimon(8, '場所（ばしょ）を表す前置詞', '6点')
