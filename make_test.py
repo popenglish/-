@@ -88,7 +88,9 @@ para('中1 ②　英語テスト　2026 前期（水曜 #2 / #3）', bold=True, 
 para('Name（　　　　　　　　　　　　　　　　　）　　　　得点（　　　　　／ 50 ）',
      size=12, space_after=6)
 para('※ 全部で50問、1問1点です。答えはすべて 記号（きごう）を（　）に書くか、'
-     '〇で囲（かこ）みます。ゆっくり読んで答えましょう。', size=10, space_after=8)
+     '〇で囲（かこ）みます。ゆっくり読んで答えましょう。', size=10, space_after=2)
+para('※ 最後に「チャレンジ問題」があります。できた分だけボーナス点（＋3点まで）に'
+     'なります。時間が余ったらちょうせんしましょう。', size=10, space_after=8)
 
 # ============ 大問1 ============
 daimon(1, '主語（しゅご）と be動詞', '8点')
@@ -220,6 +222,26 @@ for idx, sentence in enumerate(draw_items):
     run.element.rPr.rFonts.set(qn('w:eastAsia'), 'MS Gothic')
     blank = table.cell(1, idx)
     set_cell_borders(blank)
+
+# ============ チャレンジ問題（ボーナス） ============
+daimon('9', 'チャレンジ問題　※ボーナス（＋3点まで）', '各1点')
+para('できなくても 50点満点 にはひびきません。じしんがあったらちょうせん！', size=10, space_after=4)
+
+para('(1) 次の質問の答えとして正しいものをア～エから選び、（　）に記号を書きましょう。',
+     space_before=4, space_after=2)
+para('　Where is your bag?（　　）')
+para('　ア It is by the desk.　　イ Yes, it is.　　ウ He is kind.　　エ It is a bag.',
+     space_after=6)
+
+para('(2) 次の語を正しい順番にならべかえて、英文を書きましょう。'
+     '（文の最初は大文字で書きましょう）', space_after=2)
+para('　[ the piano / can / play / she ]')
+para('　答え：＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿',
+     space_after=6)
+
+para('(3) 次の日本語を英語で書きましょう。', space_after=2)
+para('　「その犬（The dog）は家（the house）の前にいます。」')
+para('　答え：＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿')
 
 doc.save('/home/user/-/中1_英語テスト_2026前期_完成版50点.docx')
 print('saved')
